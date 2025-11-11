@@ -381,11 +381,11 @@
     renderProducts();
   </script>
 <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service-worker.js')
-      .then(() => console.log('✅ Service Worker registrado correctamente'))
-      .catch(err => console.error('❌ Error al registrar el Service Worker:', err));
-  }
+ if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/Street-Wear-X/service-worker.js')
+    .then(() => console.log('Service Worker registrado'))
+    .catch(err => console.error('Error:', err));
+}
 </script>
 
 </body>
