@@ -30,9 +30,3 @@ self.addEventListener('fetch', event => {
     })
   );
 });
-
-        return new Response('Offline', { status: 503 });
-      })
-    )
-  );
-});
